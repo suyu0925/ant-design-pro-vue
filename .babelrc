@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "@vue/app",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "not ie <= 10"
+          ]
+        }
+      }
+    ]
+  ]
+}
