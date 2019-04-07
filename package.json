@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "repository": "https://github.com/suyu0925/ant-design-pro-vue.git",
   "author": "suyu0925 <suyu0925@gmail.com>",
@@ -14,7 +15,9 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.5",
+    "@vue/cli-plugin-eslint": "^3.5.1",
     "@vue/cli-service": "^3.5.3",
+    "@vue/eslint-config-standard": "^4.0.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
