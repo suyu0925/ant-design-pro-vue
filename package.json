@@ -1,0 +1,19 @@
+{
+  "name": "ant-design-pro-vue",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "repository": "https://github.com/suyu0925/ant-design-pro-vue.git",
+  "author": "suyu0925 <suyu0925@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.5.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
