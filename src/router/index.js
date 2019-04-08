@@ -1,13 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { UserLayout } from '@/layouts'
 
 Vue.use(Router)
 
 const constantRouterMap = [
   {
-    path: '/login',
-    name: 'login',
-    component: () => import(/* webpackChunkName: "user" */ '@views/user/Login')
+    path: '/user',
+    redirect: '/user/login',
+    component: UserLayout,
+    children: [{
+      path: 'login',
+      name: 'login',
+      component: () => import(/* webpackChunkName: "user" */ '@views/user/Login')
+    }]
   },
   {
     path: '/404',

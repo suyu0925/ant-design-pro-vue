@@ -7,6 +7,6 @@ router.beforeEach((to, from, next) => {
     // 在免登录白名单，直接进入
     next()
   } else {
-    next({ path: '/login', query: { redirect: to.fullPath } })
+    next({ path: '/user/login', query: { redirect: to.fullPath } })
   }
 })
