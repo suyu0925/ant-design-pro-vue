@@ -7,11 +7,11 @@ const constantRouterMap = [
   {
     path: '/login',
     name: 'login',
-    component: () => import(/* webpackChunkName: "user" */ '../views/user/Login')
+    component: () => import(/* webpackChunkName: "user" */ '@views/user/Login')
   },
   {
     path: '/404',
-    component: () => import(/* webpackChunkName: "fail" */ '../views/exception/404'),
+    component: () => import(/* webpackChunkName: "fail" */ '@views/exception/404'),
     hidden: true
   },
   { path: '*', redirect: '/404', hidden: true }

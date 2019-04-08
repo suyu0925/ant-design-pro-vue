@@ -1,5 +1,16 @@
+const path = require('path')
+
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+
 // vue.config.js
 module.exports = {
+  chainWebpack: (config) => {
+    config.resolve.alias
+      .set('@$', resolve('src'))
+      .set('@views', resolve('src/views'))
+  },
   css: {
     loaderOptions: {
       less: {
