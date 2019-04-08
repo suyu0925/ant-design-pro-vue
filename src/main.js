@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 import './core/use'
+import './permission'
 
 Vue.config.productionTip = false
 

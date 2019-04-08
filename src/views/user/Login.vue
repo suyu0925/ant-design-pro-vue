@@ -119,7 +119,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       customActiveKey: 'tab1',
       form: this.$form.createForm(this),
@@ -132,16 +132,16 @@ export default {
       }
     }
   },
-  created () {},
+  created() {},
   methods: {
-    handleSubmit (e) {
+    handleSubmit(e) {
       e.preventDefault()
     },
-    handleTabClick (key) {
+    handleTabClick(key) {
       this.customActiveKey = key
       // this.form.resetFields()
     },
-    handleUsernameOrEmail (rule, value, callback) {
+    handleUsernameOrEmail(rule, value, callback) {
       const { state } = this
       const regex = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/
       if (regex.test(value)) {

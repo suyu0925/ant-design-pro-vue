@@ -6,6 +6,7 @@ Vue.use(Router)
 const constantRouterMap = [
   {
     path: '/login',
+    name: 'login',
     component: () => import(/* webpackChunkName: "user" */ '../views/user/Login')
   },
   {
