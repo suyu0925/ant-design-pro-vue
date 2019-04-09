@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { UserLayout } from '@/layouts'
+import { BasicLayout, UserLayout } from '@/layouts'
 
 Vue.use(Router)
 
@@ -14,6 +14,21 @@ const constantRouterMap = [
       name: 'login',
       component: () => import(/* webpackChunkName: "user" */ '@views/user/Login')
     }]
+  },
+  {
+    path: '/',
+    name: 'index',
+    redirect: '/dashboard/workplace',
+    component: BasicLayout,
+    meta: { title: '首页' },
+    children: [
+      {
+        path: '/dashboard/workplace',
+        name: 'workplace',
+        component: () => import('@/views/dashboard/Workplace'),
+        meta: { title: '工作台' }
+      }
+    ]
   },
   {
     path: '/404',

@@ -1,6 +1,6 @@
 import router from './router'
 
-const whiteList = ['login'] // no redirect whitelist
+const whiteList = ['login', 'workplace'] // no redirect whitelist
 
 router.beforeEach((to, from, next) => {
   if (whiteList.includes(to.name)) {
